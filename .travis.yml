@@ -11,4 +11,4 @@ before_script:
   - sudo apt-get install postgresql-common
   
 script:
- - sudo make DESTDIR="./" install
+ - sudo make install
