@@ -13,4 +13,5 @@ before_script:
   - sudo /etc/init.d/postgresql restart
   
 script:
- - sudo make install && sudo make installcheck
+ - sudo make install
+ - sudo make installcheck
