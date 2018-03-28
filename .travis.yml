@@ -10,7 +10,6 @@ env:
 before_script:
   - sudo apt-get install postgresql-server-dev-all
   - sudo apt-get install postgresql-common
-  - sudo systemctl restart postgresql.service
   - sudo /etc/init.d/postgresql restart
   
 script:
