@@ -9,8 +9,6 @@ addons:
     packages:
     - postgresql-10
     - postgresql-client-10
-    - postgresql-server-dev-all
-    - postgresql-common
     
 env:
   global:
