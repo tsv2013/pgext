@@ -3,9 +3,6 @@ sudo: required
 services:
   - postgresql
 
-addons:
-  postgresql: "9.5"
-
 before_script:
   - sudo apt-get install postgresql-server-dev-all
   - sudo apt-get install postgresql-common
