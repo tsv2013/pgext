@@ -2,13 +2,6 @@ sudo: required
 
 services:
   - postgresql
-  
-addons:
-  postgresql: "10"
-  apt:
-    packages:
-    - postgresql-10
-    - postgresql-client-10
     
 env:
   global:
@@ -18,6 +11,7 @@ before_script:
   - sudo apt-get install postgresql-server-dev-all
   - sudo apt-get install postgresql-common
   - sudo systemctl restart postgresql.service
+  - sudo /etc/init.d/postgresql restart
   
 script:
  - sudo make install
