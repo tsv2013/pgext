@@ -1,0 +1,10 @@
+sudo: required
+
+services:
+  - postgresql
+
+addons:
+  postgresql: "9.5"
+
+script:
+ - make install
